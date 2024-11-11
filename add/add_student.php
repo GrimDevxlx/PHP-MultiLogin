@@ -3,7 +3,7 @@ session_start();
 include 'connect.php';
 if(isset($_SESSION['user_data'])){
 	if($_SESSION['user_data']['usertype']!=1){
-		header("Location:student_home.php");
+		header("Location:/student_home.php");
 	}
 ?>
 <!DOCTYPE html>
@@ -13,7 +13,7 @@ if(isset($_SESSION['user_data'])){
 	<?php include 'css.php'; ?>
 </head>
 <body>
-	<form action="add_student_post.php" method="post">
+	<form action="add/add_student_post.php" method="post">
 	<div class="container">
 		<div class="row">
 			<a href="index.php" class="btn btn-success" style="margin:10px;">Home</a>
