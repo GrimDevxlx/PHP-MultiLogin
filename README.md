@@ -1,6 +1,6 @@
-### php-student-teacher-multi-login-project 2024
+### php-student-teacher-multi-login 2024
 
-1. For Teacher  -> can add Students and Their Result also Edit the Results
-2. For Student -> can can login and View Their Result
+* Teachers  -> can add students and their result also edit the results.
+* Students -> can can login and View result.
 
 # USE XAMPP TO OPEN THE LOCALHOST
