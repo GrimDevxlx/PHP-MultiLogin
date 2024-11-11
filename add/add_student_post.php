@@ -3,7 +3,7 @@ session_start();
 include 'connect.php';
 if(isset($_SESSION['user_data'])){
 	if($_SESSION['user_data']['usertype']!=1){
-		header("Location:student_home.php");
+		header("Location:/student_home.php");
 	}
 	$name=mysqli_real_escape_string($con,$_REQUEST['name']);
 	$email=mysqli_real_escape_string($con,$_REQUEST['email']);
@@ -14,7 +14,7 @@ if(isset($_SESSION['user_data'])){
 		header("Location:add_student.php?success=Added Successfully");
 	}
 	else{
-		header("Location:add_student.php?error=Failed to Add Student");
+		header("Location:add/add_student.php?error=Failed to Add Student");
 	}
 ?>
 <?php
